@@ -1,8 +1,6 @@
 import { ReactNode } from "react"
 import * as bs from 'react-spring-bottom-sheet'
 import { ModalAppBar } from "../navigation"
-import 'react-spring-bottom-sheet/dist/style.css'
-import './BottomSheet.css'
 
 export interface BottomSheetProps {
   open: boolean

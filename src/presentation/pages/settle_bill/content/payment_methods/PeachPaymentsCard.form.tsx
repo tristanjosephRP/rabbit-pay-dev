@@ -6,7 +6,6 @@ import { PaymentMethodEnum } from "../../../../../network/models"
 import { Dimensions, EdgeInsets } from "../../../../../resources"
 import { IconsEnum } from "../../../../../resources/icons"
 import { BaseContainer, Center, CircleLoader, EmptyComponent } from "../../../../components"
-import './PaymentForm.css'
 
 const PeachForm = styled.form``
 
