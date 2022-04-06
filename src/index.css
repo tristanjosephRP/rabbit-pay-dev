@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'JakartaSans';
+  font-weight: 100;
+  src: local('JakartaSans'), url(../src/resources/fonts/JakartaSans/PlusJakartaSans-ExtraLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'JakartaSans';
+  font-weight: 200;
+  src: local('JakartaSans'), url(../src/resources/fonts/JakartaSans/PlusJakartaSans-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'JakartaSans';
+  font-weight: 300;
+  src: local('JakartaSans'), url(../src/resources/fonts/JakartaSans/PlusJakartaSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'JakartaSans';
+  font-weight: 400;
+  src: local('JakartaSans'), url(../src/resources/fonts/JakartaSans/PlusJakartaSans-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'JakartaSans';
+  font-weight: 500;
+  src: local('JakartaSans'), url(../src/resources/fonts/JakartaSans/PlusJakartaSans-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'JakartaSans';
+  font-weight: 600;
+  src: local('JakartaSans'), url(../src/resources/fonts/JakartaSans/PlusJakartaSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'JakartaSans';
+  font-weight: 700;
+  src: local('JakartaSans'), url(../src/resources/fonts/JakartaSans/PlusJakartaSans-ExtraBold.ttf) format('truetype');
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: JakartaSans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

@@ -1,0 +1,33 @@
+export interface IColorScheme {
+  primary: string
+  primaryContainer: string
+  primaryHover: string
+  onPrimary: string
+  secondary: string
+  secondaryContainer: string
+  secondaryHover: string
+  onSecondary: string
+  tertiary: string
+  tertiaryHover: string
+  tertiaryContainer: string
+  onTertiary: string
+  error: string
+  onError: string
+  background: string
+  onBackground: string
+  surface: string
+  onSurface: string
+  surfaceVariant: string
+  onSurfaceVariant: string
+  button: string
+  outline: string
+  shadow: string
+  hover: string
+  support01: string
+  support02: string
+  support03: string
+  neutral01: string
+  lightText: string
+  darkText: string
+  appBarBackground: string
+}

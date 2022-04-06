@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>RabbitPay</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" async >
+      var wpwlOptions = {
+        style: "plain",
+        brandDetection: true,
+        applePay: {
+          style: "white-with-line",
+          label: "With Apple Pay",
+          supportedNetworks: ['masterCard', 'visa'],
+          merchantCapabilities: ['supports3DS'],
+          version: 1
+        },
+        onReady: function () {
+          $('form.wpwl-form-card').find('.wpwl-group-cardHolder').remove()
+          var payWithAppleHTML = '<div class="customLabel">Click the button below to continue</div><div class="customInput"><input type="checkbox" name="createRegistration" value="true" /></div>'
+          var createRegistrationHtml = '<div class="customLabel">Remember my card for next time</div><div class="customInput"><input type="checkbox" name="createRegistration" value="true" /></div>'
+          var payWithTokenisedCardHtml = '<div class="customLabelRegCard">Pay with saved card</div>'
+          $('form.wpwl-form-card').find('.wpwl-button').before(createRegistrationHtml)
+          $('form.wpwl-group').find('.wpwl-apple-pay-button').before(payWithAppleHTML)
+          $('div.wpwl-container-registration').before(payWithTokenisedCardHtml)
+        }
+      };
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
