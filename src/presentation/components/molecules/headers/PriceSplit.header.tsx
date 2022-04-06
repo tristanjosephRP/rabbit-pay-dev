@@ -55,7 +55,7 @@ export function PriceSplitHeader({
       <If condition={ amount != null } >
         <Then>
           <Text
-            text={ PresentationHelper.formatCurrency(amount ?? 0, CurrencyEnum.ZAR) }
+            text={ PresentationHelper.formatCurrency(amount! < 0 ? 0 : amount!, CurrencyEnum.ZAR) }
             style={ themeData.textTheme.bodyMedium.copyWith({
               height: 0
             })} />

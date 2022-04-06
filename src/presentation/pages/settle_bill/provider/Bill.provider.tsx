@@ -8,7 +8,7 @@ import { BillState } from "./Bill.state"
 export const BillStateContext = createContext<{ 
   state: BillState,
   dispatch: Dispatch,
-  refetchTable: () => void
+  refetchTable: () => Promise<void>
 } | undefined> (undefined)
 
 export interface BillProviderProps {

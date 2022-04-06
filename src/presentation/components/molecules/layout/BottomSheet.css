@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --rsbs-backdrop-bg: rgba(100, 100, 100, 0.32);
+    --rsbs-bg: #1C1C21;
+    --rsbs-handle-bg: #676766;
+    --rsbs-overlay-rounded: 8px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --rsbs-backdrop-bg: rgba(0, 0, 0, 0.32);
+    --rsbs-bg: #FFFFFF;
+    --rsbs-handle-bg: #E9E9ED;
+    --rsbs-overlay-rounded: 8px;
+  }
+}

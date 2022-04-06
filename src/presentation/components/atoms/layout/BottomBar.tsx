@@ -11,7 +11,7 @@ const Container = styled.div<{ show: boolean }>`
   });
   left: 0;
   right: 0;
-  z-index: 5;
+  z-index: 3;
   padding: ${EdgeInsets.all(Dimensions.regular)};
   background-color: ${(props): string =>
     props.theme.colorScheme.appBarBackground

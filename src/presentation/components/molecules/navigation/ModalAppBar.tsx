@@ -4,25 +4,9 @@ import { HorizontalSpacer, Spacer, Text, IconButton } from "../../atoms"
 import { IconsEnum } from "../../../../resources/icons"
 
 const Container = styled.div`
-  background-color: ${(props): string =>
-    props.theme.colorScheme.surface
-  };
   width: 100%;
-  min-height: 48px;
-  max-height: 48px;
   display: flex;
   align-items: center;
-  padding: ${EdgeInsets.symmetric({ 
-    horizontal: Dimensions.regular
-  })};
-  border-bottom:  ${(props): string | null =>
-    props.theme.isDarkMode 
-      ? `0.5px solid ${props.theme.colorScheme.outline}`
-      : `1px solid ${props.theme.colorScheme.outline}`
-  };
-  border-top-right-radius: ${Dimensions.extraSmall} !important;
-  border-top-left-radius: ${Dimensions.extraSmall} !important;
-  overflow: clip !important;
 `
 
 export interface ModalAppBarProps {
@@ -44,7 +28,7 @@ export function ModalAppBar({ title, onClose }: ModalAppBarProps): JSX.Element {
       <Spacer />
       <Text
         text={ title }
-        style={ themeData.textTheme.labelLarge.copyWith({height: 2}) } />
+        style={ themeData.textTheme.labelLarge.copyWith({height: 3}) } />
       <Spacer />
       <IconButton
         icon={ IconsEnum.close }

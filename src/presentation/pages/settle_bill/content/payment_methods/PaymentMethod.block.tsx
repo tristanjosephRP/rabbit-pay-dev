@@ -22,7 +22,7 @@ export function PaymentMethodBlock({}: PaymentMethodBlockProps): JSX.Element {
       type: BillActionEnum.setPaymentMethod,
       method: method
     })
-    refetchTable()
+    await refetchTable()
     setOpen(true)
   }
 
